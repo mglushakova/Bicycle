@@ -328,4 +328,101 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/features-image-big-4-2.jpg");
 }
 
+.twits {
+  position: relative;
+}
+
+.twits-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.twits-list-item {
+  display: none;
+  padding-top: 185px;
+  padding-bottom: 180px;
+}
+
+.twits-list-item-active {
+  display: block;
+}
+
+.twits-info {
+  position: relative;
+
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.twits-info::after {
+  content: "";
+
+  position: absolute;
+  top: -60px;
+  left: 50%;
+
+  width: 32px;
+  height: 27px;
+  margin-right: -16px;
+
+  background-image: url("../img/twitter.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.twits-text {
+  width: 1040px;
+  margin: 0 auto;
+
+  font-family: latoitalic, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  color: #848789;
+  text-align: center;
+}
+
+.twits-place {
+  font-family: latobold, Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  color: #353738;
+}
+
+.twits-time {
+  font-family: latolight, Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  color: #848789;
+}
+
+.controls {
+  position: absolute;
+  bottom: 70px;
+  left: 800px;
+
+  transform: translateX(-50%);
+}
+
+.controls i {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 5px;
+
+  border: 1px solid #cecece;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.controls i:last-child {
+  margin-right: 0;
+}
+
+.controls .active {
+  background-color: #a9afb3;
+}
 
