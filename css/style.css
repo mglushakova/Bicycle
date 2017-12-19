@@ -73,3 +73,52 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.main-header {
+  min-height: 800px;
+  padding-top: 25px;
+
+  background-color: #f1f2f8;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-navigation-item {
+  margin-right: 75px;
+}
+
+.main-navigation-item:nth-child(2),
+.main-navigation-item:nth-child(3) {
+  margin-right: 60px;
+}
+
+.main-navigation-item:last-child {
+  margin-right: 0;
+}
+
+.main-logo {
+  margin-top: 10px;
+}
+
+.main-navigation-item a {
+  font-family: latobold, Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 2.6px;
+  color: #4d4959;
+  text-transform: uppercase;
+}
+
+
+
