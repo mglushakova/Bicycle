@@ -83,9 +83,9 @@
       <section class="twits">
         <h2 class="visually-hidden">Последние твиты</h2>
         <div class="controls">
-          <i class="active"></i>
-          <i></i>
-          <i></i>
+          <span class="active"></span>
+          <span></span>
+          <span></span>
         </div>
         <ul class="twits-list">
           <li class="twits-list-item twits-list-item-active">
@@ -114,15 +114,41 @@
 
       <section class="gallery">
         <h2 class="visually-hidden">Фото деталей товара</h2>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item">
-          <a href="#">Shop now</a>
+        <div class="gallery-container">
+          <div class="gallery-wrap">
+            <div class="gallery-block">
+              <div class="gallery-item">
+                <img src="img/gallery-1.jpg" alt="Седло велосипеда выполнено качественно" width="267" height="267">
+              </div>
+              <div class="gallery-item">
+                <img src="img/gallery-2.jpg" alt="Большой выбор седел на полках магазина" width="267" height="267">
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/gallery-3.jpg" alt="Детали сборки седла выглядят превосходно" width="534" height="267">
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/gallery-4.jpg" alt="Велосипед имеет багажник" width="267" height="534">
+          </div>
+          <div class="gallery-item">
+            <img src="img/gallery-5.jpg" alt="Все узлы велосипеда собраны качественно" width="269" height="534">
+          </div>
+          <div class="gallery-wrap">
+            <div class="gallery-item gallery-item-to-shop">
+              <img src="img/gallery-6.jpg" alt="В магазине представлен огромный выбор аксессуаров" width="534" height="267">
+              <a class="gallery-to-shop" href="#">Shop now</a>
+            </div>
+            <div class="gallery-block">
+              <div class="gallery-item">
+                <img src="img/gallery-7.jpg" alt="В наличие есть седла со стилизацией" width="267" height="267">
+              </div>
+              <div class="gallery-item">
+                <img src="img/gallery-8.jpg" alt="В магазине также представлены дорожные сумки" width="267" height="267">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="gallery-item"></div>
         <p class="gallery-shop-link">
           <a href="#">Discover the shop</a>
         </p>
@@ -130,6 +156,7 @@
 
       <section class="subscription">
         <h2 class="visually-hidden">Подписка на новости компании</h2>
+        <img class="subscription-logo" src="img/logo.png" alt="Логотип Bicycle Company" width="94" height="85">
         <b>Stay on the saddle!</b>
         <form class="subscription-form" method="post">
           <label class="visually-hidden" for="email-input">Email</label>

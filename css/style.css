@@ -342,7 +342,7 @@ input[type="radio"].visually-hidden {
 .twits-list-item {
   display: none;
   padding-top: 185px;
-  padding-bottom: 180px;
+  padding-bottom: 175px;
 }
 
 .twits-list-item-active {
@@ -406,7 +406,7 @@ input[type="radio"].visually-hidden {
   transform: translateX(-50%);
 }
 
-.controls i {
+.controls span {
   display: inline-block;
   width: 11px;
   height: 11px;
@@ -418,7 +418,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.controls i:last-child {
+.controls span:last-child {
   margin-right: 0;
 }
 
@@ -426,3 +426,178 @@ input[type="radio"].visually-hidden {
   background-color: #a9afb3;
 }
 
+.gallery-container {
+  display: flex;
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 533px;
+}
+
+.gallery-block {
+  display: flex;
+  height: 267px;
+}
+
+.gallery-item-to-shop {
+  position: relative;
+
+  height: 267px;
+  margin-bottom: -6px;
+}
+
+.gallery-item-to-shop:hover::after,
+.gallery-item-to-shop:focus::after {
+   opacity: 0.5;
+}
+
+.gallery-item-to-shop:active::after {
+  opacity: 0.9;
+}
+
+.gallery-item-to-shop::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  opacity: 0.8;
+
+  background-color: #64c29e;
+}
+
+.gallery-to-shop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  display: block;
+  width: 534px;
+  height: 267px;
+  padding-top: 20px;
+
+  font-family: latobold, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 267px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.gallery-to-shop::before {
+  content: "";
+
+  position: absolute;
+  top: 110px;
+  left: 240px;
+
+  width: 51px;
+  height: 30px;
+
+  background-image: url("../img/gallery-shop-icon.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.gallery-shop-link {
+  margin: 0;
+  margin-top: -6px;
+  padding-top: 80px;
+  padding-bottom: 75px;
+
+  text-align: center;
+  color: #d4d5d7;
+
+  background-color: #282f35;
+}
+
+.gallery-shop-link a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 16px 54px;
+
+  font-family: latobold, Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d4d5d7;
+
+  border: 1px solid #94979a;
+}
+
+.gallery-shop-link a:hover,
+.gallery-shop-link a:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.gallery-shop-link a:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.subscription {
+  padding-top: 110px;
+  padding-bottom: 110px;
+
+  text-align: center;
+}
+
+.subscription-logo {
+  margin-bottom: 25px;
+}
+
+.subscription b {
+  display: block;
+  margin-bottom: 25px;
+
+  font-family: latoitalic, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  color: #848789;
+}
+
+.subscription-input {
+  width: 400px;
+  margin-right: 8px;
+  padding: 16px 30px;
+
+  font-family: latoitalic, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.subscription-input::-webkit-input-placeholder {
+  color: #929292;
+}
+
+.subscription-input:-ms-input-placeholder {
+  color: #929292;
+}
+
+.subscription-input::-ms-input-placeholder {
+  color: #929292;
+}
+
+.subscription-input::placeholder {
+  color: #929292;
+}
+
+.subscription-button {
+  padding: 22px 45px;
+
+  font-family: latolight, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #64c29e;
+  border: none;
+}
