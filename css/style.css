@@ -601,3 +601,69 @@ input[type="radio"].visually-hidden {
   background-color: #64c29e;
   border: none;
 }
+
+.main-footer {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 250px;
+
+  color: #848789;
+
+  background-color: #f7f7f7;
+}
+
+.footer-address {
+  margin: 0;
+  margin-right: 242px;
+
+  font-family: latoitalic, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.footer-address span {
+  font-family: latobold, Arial, sans-serif;
+}
+
+.socials {
+  margin-top: 15px;
+}
+
+.socials-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.socials-item {
+  margin-right: 15px;
+}
+
+.socials-item:last-child {
+  margin-right: 0;
+}
+
+.socials-link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 34px;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.socials-tw {
+  background-image: url("../img/socials-tw.png");
+}
+
+.socials-fb {
+  background-image: url("../img/socials-fb.png");
+}
+
+.socials-pt {
+  background-image: url("../img/socials-pt.png");
+}
