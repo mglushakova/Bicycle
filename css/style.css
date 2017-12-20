@@ -120,6 +120,15 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.main-navigation-item a[href]:hover,
+.main-navigation-item a[href]:focus {
+  opacity: 0.6;
+}
+
+.main-navigation-item a[href]:active {
+  opacity: 0.3;
+}
+
 .features-list {
   margin: 0;
   padding: 0;
@@ -571,6 +580,13 @@ input[type="radio"].visually-hidden {
   font-family: latoitalic, Arial, sans-serif;
   font-size: 20px;
   line-height: 34px;
+
+  border: 1px solid #d3d7d9;
+}
+
+.subscription-input:hover,
+.subscription-input:focus {
+  border: 1px solid #bcbfc1;
 }
 
 .subscription-input::-webkit-input-placeholder {
@@ -600,6 +616,15 @@ input[type="radio"].visually-hidden {
 
   background-color: #64c29e;
   border: none;
+}
+
+.subscription-button:hover,
+.subscription-button:focus {
+  background-color: #5fb795;
+}
+
+.subscription-button:active {
+  background-color: #529f81;
 }
 
 .main-footer {
@@ -654,6 +679,15 @@ input[type="radio"].visually-hidden {
 
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  opacity: 0.6;
+}
+
+.socials-link:active {
+  opacity: 0.3;
 }
 
 .socials-tw {
